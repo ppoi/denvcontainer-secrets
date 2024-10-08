@@ -1,0 +1,40 @@
+{
+  "name": "denvcontainer-secrets",
+  "version": "1.0.0",
+  "description": "Secrets Manager for DevContainers Environment",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "spa.dev": "npx vite --host 0.0.0.0 --port 8080",
+    "build": "npx vite build",
+    "preview": "npx vite preview --host 0.0.0.0 --port 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppoi/devcontainer-secrets.git"
+  },
+  "author": "PPOI <ppoi@tsukuba-bunko.org>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ppoi/devcontainer-secrets/issues"
+  },
+  "homepage": "https://github.com/ppoi/devcontainer-secrets#readme",
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "esm": "^3.2.25",
+    "sass": "^1.79.4",
+    "vite": "^5.4.8",
+    "vite-plugin-html-meta": "^1.0.3"
+  },
+  "dependencies": {
+    "@tblab/ella-spa-core": "file:lib/spa-core",
+    "bootstrap": "^5.3.3",
+    "datatables.net-bs5": "^2.1.8",
+    "datatables.net-select-bs5": "^2.1.0",
+    "jquery": "^3.7.1",
+    "lodash-es": "^4.17.21",
+    "path-to-regexp": "^8.2.0",
+    "rawth": "^3.0.0",
+    "svelte": "^4.2.19"
+  }
+}

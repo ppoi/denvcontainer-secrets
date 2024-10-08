@@ -2,13 +2,20 @@
   "name": "devcontainer-secrets",
   "image": "ghcr.io/ppoi/devcontainer-images/type-alpha:latest",
   "mounts": [{"source": "/var/run/docker.sock", "target": "/var/run/docker.sock", "type": "bind"}],
-  "capAdd": ["AUDIT_WRITE", "NET_RAW"],
+  "capAdd": ["AUDIT_WRITE"],
   "customizations": {
     "vscode": {
       "extensions": [
         "svelte.svelte-vscode",
-        "redhat.vscode-yaml"
-      ]
+        "redhat.vscode-yaml",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "docker.dockerPath": "/usr/bin/docker",
+        "files.encoding": "utf8",
+        "files.eol": "\r\n",
+        "editor.useTabStops": false
+      }
     }
   }
 }

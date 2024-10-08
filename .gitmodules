@@ -1,0 +1,3 @@
+[submodule "lib/spa-core"]
+	path = lib/spa-core
+	url = https://github.com/ppoi/ella-spa-core.git
